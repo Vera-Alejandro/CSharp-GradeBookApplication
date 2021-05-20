@@ -5,9 +5,10 @@ namespace GradeBook.GradeBooks
 {
     public class RankedGradeBook : BaseGradeBook
     {
-        public RankedGradeBook(string name) : base(name)
+        public RankedGradeBook(string name, bool weighted) : base(name)
         {
             Type = GradeBookType.Ranked;
+            IsWeighted = weighted;
         }
 
         public override char GetLetterGrade(double averageGrade)
