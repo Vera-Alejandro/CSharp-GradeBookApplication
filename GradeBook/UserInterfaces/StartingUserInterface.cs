@@ -41,7 +41,7 @@ namespace GradeBook.UserInterfaces
                 return;
             }
             var name = parts[1];
-            var gbType = parts[3];
+            var gbType = parts[2].ToLower();
 
             BaseGradeBook gradeBook;
 
